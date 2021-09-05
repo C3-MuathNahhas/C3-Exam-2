@@ -6,6 +6,12 @@ Type the correct answer below each question:
 
 Q1) Why do we use databases?
 
+great to manegnet data
+great to analyize data
+fast quires
+reduce room error when handling data
+
+
 
 Q2) What are JWTs used for?.
 
