@@ -30,6 +30,8 @@ builtIn middleware
 
 
 Q5) What is the `effect` hook used for in react?
+
+using to solved side effect 
 ``
 
 Q6) What is the `state` hook used for in react?
