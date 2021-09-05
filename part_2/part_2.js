@@ -35,6 +35,7 @@ using to solved side effect
 ``
 
 Q6) What is the `state` hook used for in react?
+function using in component function to render update
 
 
 Q7) List three thing you can use to create a responsive web application.
