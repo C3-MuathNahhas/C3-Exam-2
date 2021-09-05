@@ -2,17 +2,17 @@ import React, { useState } from "react";
 
 import axios from "axios";
 
-export const AllBook = () => {
+export const BookByid = () => {
   const [value, setvalue] = useState();
 
   const click = () => {
-    axios.get("http://localhost:5000/book/allbook").then((result) => {
+    axios.get("http://localhost:5000/book/id").then((result) => {
       setvalue(result.data.AllBook);
     });
   };
   return (
     <div>
-      <button onClick={click}>allbook</button>
+      <button onClick={click}>bookbyid</button>
       {value &&
         value.map((element) => {
           return (
