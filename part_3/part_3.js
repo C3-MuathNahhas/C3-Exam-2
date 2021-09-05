@@ -9,12 +9,17 @@ return 'NO' if the parentheses in the input string are not balanced,.
 
 */
 
-console.log('PART 4');
-
-const isABalancedString = () => {
-  // WRITE YOUR CODE BELOW THIS LINE
+console.log("PART 4");
+let a = "[]";
+let b = "[]";
+const isABalancedString = (a, b) => {
+  if (a === b) {
+    return "yes";
+  } else {
+    return "no";
+  }
 };
-
+isABalancedString(a, b);
 /*
 
 Examples:
