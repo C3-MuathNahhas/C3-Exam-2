@@ -59,4 +59,21 @@ const bookById = (req, res) => {
       });
     });
 };
-module.exports = { newBook, allbook, bookById };
+const deletebook = (req, res) => {
+  const id = req.params.id;
+  bookModel
+    .deleteOne({ id: id })
+    .then(() => {
+      res.status(201).json({
+        success: true,
+        BookDeleted: "book was deleted",
+      });
+    })
+    .catch((err) => {
+      res.status(404).json({
+        success: false,
+        massage: err,
+      });
+    });
+};
+module.exports = { newBook, allbook, bookById, deletebook };
