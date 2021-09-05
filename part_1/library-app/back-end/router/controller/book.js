@@ -42,4 +42,21 @@ const allbook = (req, res) => {
       });
     });
 };
-module.exports = { newBook, allbook };
+const bookById = (req, res) => {
+  const id = req.params.id;
+  bookModel
+    .findOne({ id: id })
+    .then((result) => {
+      res.status(201).json({
+        success: true,
+        specificBook: result,
+      });
+    })
+    .catch((err) => {
+      res.status(404).json({
+        success: false,
+        massage: err,
+      });
+    });
+};
+module.exports = { newBook, allbook, bookById };
