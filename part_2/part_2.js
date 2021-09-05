@@ -14,10 +14,14 @@ reduce room error when handling data
 
 
 Q2) What are JWTs used for?.
+laibrary help to create token  
+
 
 
 Q3) What are the main three sections of a JWT?
-
+headers
+segniture
+payload
 
 Q4) Name three types of express middle-wares.
 
