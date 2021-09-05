@@ -24,6 +24,9 @@ segniture
 payload
 
 Q4) Name three types of express middle-wares.
+application middelware
+error handling middleware
+builtIn middleware
 
 
 Q5) What is the `effect` hook used for in react?
