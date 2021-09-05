@@ -50,5 +50,6 @@ Q9) What is the difference between authentication and authorization?
 authentication:virification for user credinteals
 authorization:set of rules for user that what can and can not do 
 Q10) Why do we save some information as an environment variable (in .env file)?
+env:environmet using to store sensitive information and dont put in code 
 
 */
