@@ -10,6 +10,11 @@ export const AllBook = () => {
       setvalue(result.data.AllBook);
     });
   };
+  const deleted = (e) => {
+    axios.delete(`http://localhost:5000/book/allbook/${e}`).then((result) => {
+      setvalue(result.data.AllBook);
+    });
+  };
   return (
     <div>
       <button onClick={click}>allbook</button>
@@ -21,6 +26,7 @@ export const AllBook = () => {
               <p>{element.author}</p>
               <p>{element.pages}</p>
               <p>{element.publisher}</p>
+              <button onClick={() => deleted(element._id)}>deleted</button>
             </div>
           );
         })}
